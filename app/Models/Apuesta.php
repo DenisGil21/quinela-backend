@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Apuesta extends Model
 {
-    use HasFactory, SoftDeletes;    
+    use HasFactory, SoftDeletes;   
+    
+    protected $dates = ['deleted_at'];
     
     protected $guarded = [];
 
